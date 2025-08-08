@@ -1,102 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kimberley Warm Springs - A Natural Wonder at Risk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimberley Warm Springs – A Natural Wonder in Decline</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+    /* Custom styles for specific tweaks */
+    .prose img {
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
     }
-    header {
-      background: #0077cc;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    h1, h2 {
-      margin-bottom: 1rem;
-    }
-    img {
-      width: 100%;
-      border-radius: 8px;
-      margin: 1rem 0;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    p {
-      line-height: 1.6;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #efefef;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-    #comments {
-      margin-top: 4rem;
+    .utterances {
+      max-width: 100%;
+      margin-top: 2rem;
     }
   </style>
 </head>
-<body>
-
-  <header>
-    <h1>Kimberley Warm Springs</h1>
-    <p>A Tasmanian natural treasure — neglected and in need of care</p>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-8 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">Kimberley Warm Springs</h1>
+      <p class="text-lg md:text-xl">A Natural Treasure at Risk</p>
+    </div>
   </header>
 
-  <div class="container">
-    <section id="introduction">
-      <h2>About Kimberley Warm Springs</h2>
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <section class="bg-white rounded-lg shadow-lg p-6 md:p-8 prose prose-lg max-w-none">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-900">The Situation</h2>
       <p>
-        Kimberley Warm Springs is a unique geothermal site located in northwest Tasmania. With consistently warm temperatures of around 27°C, its bubbling sands and mineral-rich waters have been a wonder of nature for centuries. The spring supports a rare and delicate ecosystem — but unfortunately, it’s being left to deteriorate.
+        Kimberley Warm Springs has been a natural wonder for generations, with warm, clear water bubbling 24/7 from beneath the earth.
+      </p>
+      <p>
+        <strong>Photo 1</strong> (below) was taken in 2023, shortly after a cleanup effort removed a layer of algae that had previously smothered the beautiful, churning sand. For a brief moment, the spring returned to its natural, breathtaking state.
+      </p>
+      <img src="./images/image1.jpg" alt="Photo 1 – Kimberley Springs after 2023 cleanup" class="mx-auto my-4">
+      <p>
+        However, due to the discovery of a rare snail believed to live on the algae, Parks and Reserves has decided to stop maintaining the natural 27°C temperature year-round. As a result, the spring is now returning to a neglected state.
+      </p>
+      <p>
+        <strong>Photo 2</strong> (below), taken just two weeks ago, shows the current condition of the spring — overrun with algae and barely recognizable.
+      </p>
+      <img src="./images/image2.jpg" alt="Photo 2 – Kimberley Springs current state" class="mx-auto my-4">
+      
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-900">Our Message</h2>
+      <p>
+        Would you travel to see this cesspool, just to protect a snail 🐌? Or would you rather see Mother Nature bubbling away in her full glory, as she has for centuries?
+      </p>
+      <p>
+        Let Parks and Reserves know: this is not what’s advertised online, and it's a disgrace to let such a unique natural site fall into this condition.
       </p>
     </section>
 
-    <section id="photos">
-      <h2>Visual Evidence</h2>
-
-      <img src="images/photo-1.jpg" alt="Kimberley Warm Springs 2023 - Cleaned">
-      <p><strong>Photo 1:</strong> Taken in 2023 shortly after a rare cleanup. The algae was cleared, revealing the naturally churning sands beneath — a mesmerizing feature and true marvel of nature.</p>
-
-      <img src="images/photo-2.jpg" alt="Kimberley Warm Springs 2025 - Algae Overgrowth">
-      <p><strong>Photo 2:</strong> Taken two weeks ago. Due to the presence of a rare snail that supposedly lives on the algae, Parks and Reserves have chosen to suspend regular maintenance. As a result, the spring is now overtaken by heavy algae growth and murky water.</p>
+    <section class="comments mt-8">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-900 mb-4">Leave a Comment</h2>
+      <div class="utterances">
+        <script src="https://utteranc.es/client.js"
+          repo="[your-github-username]/[your-repo-name]"
+          issue-term="pathname"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+      <p class="text-sm text-gray-600 mt-2">Comments are public and stored in GitHub issues. They can be removed by the repo owner at any time.</p>
     </section>
+  </main>
 
-    <section id="message">
-      <h2>A Personal Plea</h2>
-      <p>
-        Would you travel to see a stagnant cesspool simply because it contains a rare snail — or would you come to witness Mother Nature bubbling away 24/7, as it has done for centuries? 
-      </p>
-      <p>
-        The current condition of Kimberley Warm Springs is not what is presented online. What should be a site of natural beauty and pride is now being left to degrade. We call on Parks and Reserves to act — to preserve and maintain this iconic place, not abandon it.
-      </p>
-    </section>
-
-    <section id="comments">
-      <h2>Community Comments</h2>
-      <script src="https://utteranc.es/client.js"
-        repo="savekimberleysprings/save-the-springs"
-        issue-term="pathname"
-        label="💬 comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-      </script>
-    </section>
-  </div>
-
-  <footer>
-    <p>This site was created to raise awareness and protect the Kimberley Warm Springs for future generations. Let’s not lose a natural wonder.</p>
+  <footer class="bg-gray-200 text-center py-4 text-gray-600">
+    <p>&copy; 2025 by [Your Name] for Grandpa. Hosted on GitHub Pages.</p>
   </footer>
-
 </body>
 </html>
