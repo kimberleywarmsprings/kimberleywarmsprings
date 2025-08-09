@@ -18,8 +18,12 @@
       max-width: 100%;
       margin-top: 1.5rem;
     }
-    /* Fallback to hide reactions if reactions-enabled="false" doesn't work */
-    .ht-reactions {
+    /* Broad CSS to hide reactions */
+    .ht-reactions,
+    [class*="reaction"],
+    [class*="reactions"],
+    .ht-comment-reactions,
+    .hyvor-talk-reactions {
       display: none !important;
     }
   </style>
@@ -68,6 +72,20 @@
           page-id="kimberley-warm-springs"
           reactions-enabled="false"
         ></hyvor-talk-comments>
+        <script>
+          // JavaScript fallback to hide reactions after Hyvor Talk loads
+          document.addEventListener('DOMContentLoaded', () => {
+            const observer = new MutationObserver(() => {
+              const reactions = document.querySelectorAll(
+                '.ht-reactions, [class*="reaction"], [class*="reactions"], .ht-comment-reactions, .hyvor-talk-reactions'
+              );
+              reactions.forEach((element) => {
+                element.style.display = 'none';
+              });
+            });
+            observer.observe(document.querySelector('.hyvor-talk'), { childList: true, subtree: true });
+          });
+        </script>
       </div>
     </section>
   </main>
