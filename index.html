@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kimberley Warm Springs – A Natural Wonder in Decline</title>
+  <title>Kimberley Warm Springs Tasmania – A Natural Wonder in Decline</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     .prose img {
@@ -18,20 +18,12 @@
       max-width: 100%;
       margin-top: 1.5rem;
     }
-    /* Broad CSS to hide reactions */
-    .ht-reactions,
-    [class*="reaction"],
-    [class*="reactions"],
-    .ht-comment-reactions,
-    .hyvor-talk-reactions {
-      display: none !important;
-    }
   </style>
 </head>
 <body class="bg-green-50 font-sans text-gray-800">
   <header class="bg-gradient-to-r from-green-800 to-green-600 text-white py-6 text-center">
     <div class="container mx-auto px-4">
-      <h1 class="text-3xl md:text-4xl font-bold mb-1">Kimberley Warm Springs</h1>
+      <h1 class="text-3xl md:text-4xl font-bold mb-1">Kimberley Warm Springs Tasmania</h1>
       <p class="text-base md:text-lg">A Natural Treasure at Risk</p>
     </div>
   </header>
@@ -40,19 +32,19 @@
     <section class="bg-white rounded-lg shadow-md p-4 md:p-6 prose prose-base max-w-none">
       <h2 class="text-xl md:text-2xl font-semibold text-green-800">The Situation</h2>
       <p>
-        Kimberley Warm Springs has been a natural wonder for generations, with warm, clear water bubbling 24/7 from beneath the earth.
+        Kimberley Warm Springs Tasmania has been a natural wonder for generations, with warm, clear water bubbling 24/7 from beneath the earth.
       </p>
       <p>
         <strong>Photo 1</strong> (below) was taken in 2023, shortly after a cleanup effort removed a layer of algae that had previously smothered the beautiful, churning sand.
       </p>
-      <img src="./images/image2.jpg" alt="Photo 1 – Kimberley Springs after 2023 cleanup" class="mx-auto my-3">
+      <img src="./images/image2.jpg" alt="Photo 1 – Kimberley Warm Springs Tasmania after 2023 cleanup" class="mx-auto my-3">
       <p>
         Due to a rare snail living on the algae, Parks and Reserves stopped maintaining the 27°C temperature year-round, leading to a neglected state.
       </p>
       <p>
-        <strong>Photo 2</strong> (below), taken recently, shows the spring overrun with algae and barely recognizable.
+        <strong>Photo 2</strong> (below), taken recently, shows the spring overrun with algae and barely recognizable at Kimberley Warm Springs Tasmania.
       </p>
-      <img src="./images/image1.jpg" alt="Photo 2 – Kimberley Springs current state" class="mx-auto my-3">
+      <img src="./images/image1.jpg" alt="Photo 2 – Kimberley Warm Springs Tasmania current state" class="mx-auto my-3">
       
       <h2 class="text-xl md:text-2xl font-semibold text-green-800">Our Message</h2>
       <p>
@@ -72,20 +64,6 @@
           page-id="kimberley-warm-springs"
           reactions-enabled="false"
         ></hyvor-talk-comments>
-        <script>
-          // JavaScript fallback to hide reactions after Hyvor Talk loads
-          document.addEventListener('DOMContentLoaded', () => {
-            const observer = new MutationObserver(() => {
-              const reactions = document.querySelectorAll(
-                '.ht-reactions, [class*="reaction"], [class*="reactions"], .ht-comment-reactions, .hyvor-talk-reactions'
-              );
-              reactions.forEach((element) => {
-                element.style.display = 'none';
-              });
-            });
-            observer.observe(document.querySelector('.hyvor-talk'), { childList: true, subtree: true });
-          });
-        </script>
       </div>
     </section>
   </main>
